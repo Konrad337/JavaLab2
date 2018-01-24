@@ -10,18 +10,13 @@ import com.google.gson.annotations.SerializedName;
 public class AirlyData {
 
     @SerializedName("currentMeasurements")
-    private CurrentMeasurements mCurrentMeasurements;
-    @SerializedName("forecast")
-    private List<Forecast> mForecast;
+    private Measurements mMeasurements;
     @SerializedName("history")
     private List<History> mHistory;
 
-    public CurrentMeasurements getCurrentMeasurements() {
-        return mCurrentMeasurements;
-    }
 
-    public List<Forecast> getForecast() {
-        return mForecast;
+    public Measurements getMeasurements() {
+        return mMeasurements;
     }
 
     public List<History> getHistory() {
@@ -30,29 +25,24 @@ public class AirlyData {
 
     public static class Builder {
 
-        private CurrentMeasurements mCurrentMeasurements;
-        private List<Forecast> mForecast;
+        private Measurements mMeasurements;
         private List<History> mHistory;
 
-        public AirlyData.Builder withCurrentMeasurements(CurrentMeasurements currentMeasurements) {
-            mCurrentMeasurements = currentMeasurements;
+        public AirlyData.Builder withMeasurements(Measurements Measurements) {
+            mMeasurements = Measurements;
             return this;
         }
 
-        public AirlyData.Builder withForecast(List<Forecast> forecast) {
-            mForecast = forecast;
+        public AirlyData.Builder withHistory(List<History> History) {
+            mHistory = History;
             return this;
-        }
+      }
 
-        public AirlyData.Builder withHistory(List<History> history) {
-            mHistory = history;
-            return this;
-        }
 
         public AirlyData build() {
             AirlyData AirlyData = new AirlyData();
-            AirlyData.mCurrentMeasurements = mCurrentMeasurements;
-            AirlyData.mForecast = mForecast;
+            AirlyData.mMeasurements = mMeasurements;
+            AirlyData.mHistory = mHistory;
             AirlyData.mHistory = mHistory;
             return AirlyData;
         }

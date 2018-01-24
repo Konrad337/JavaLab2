@@ -9,92 +9,92 @@ import com.google.gson.annotations.SerializedName;
 public class Measurements {
 
     @SerializedName("airQualityIndex")
-    private Long mAirQualityIndex;
+    private Double AirQualityIndex;
     @SerializedName("humidity")
-    private Long mHumidity;
+    private Double Humidity;
     @SerializedName("measurementTime")
-    private String mMeasurementTime;
+    private String MeasurementTime;
     @SerializedName("pm1")
-    private Long mPm1;
+    private Double Pm1;
     @SerializedName("pm10")
-    private Long mPm10;
+    private Double Pm10;
     @SerializedName("pm25")
-    private Long mPm25;
+    private Double Pm25;
     @SerializedName("pollutionLevel")
-    private Long mPollutionLevel;
+    private Double PollutionLevel;
     @SerializedName("pressure")
-    private Long mPressure;
+    private Double Pressure;
     @SerializedName("temperature")
-    private Long mTemperature;
+    private Double Temperature;
     @SerializedName("windDirection")
-    private Long mWindDirection;
+    private Double WindDirection;
     @SerializedName("windSpeed")
-    private Long mWindSpeed;
+    private Double WindSpeed;
 
-    public Long getAirQualityIndex() {
-        return mAirQualityIndex;
+    public Double getAirQualityIndex() {
+        return AirQualityIndex;
     }
 
-    public Long getHumidity() {
-        return mHumidity;
+    public Double getHumidity() {
+        return Humidity;
     }
 
     public String getMeasurementTime() {
-        return mMeasurementTime;
+        return MeasurementTime;
     }
 
-    public Long getPm1() {
-        return mPm1;
+    public Double getPm1() {
+        return Pm1;
     }
 
-    public Long getPm10() {
-        return mPm10;
+    public Double getPm10() {
+        return Pm10;
     }
 
-    public Long getPm25() {
-        return mPm25;
+    public Double getPm25() {
+        return Pm25;
     }
 
-    public Long getPollutionLevel() {
-        return mPollutionLevel;
+    public Double getPollutionLevel() {
+        return PollutionLevel;
     }
 
-    public Long getPressure() {
-        return mPressure;
+    public Double getPressure() {
+        return Pressure;
     }
 
-    public Long getTemperature() {
-        return mTemperature;
+    public Double getTemperature() {
+        return Temperature;
     }
 
-    public Long getWindDirection() {
-        return mWindDirection;
+    public Double getWindDirection() {
+        return WindDirection;
     }
 
-    public Long getWindSpeed() {
-        return mWindSpeed;
+    public Double getWindSpeed() {
+        return WindSpeed;
     }
 
     public static class Builder {
 
-        private Long mAirQualityIndex;
-        private Long mHumidity;
+        private Double mAirQualityIndex;
+        private Double mHumidity;
         private String mMeasurementTime;
-        private Long mPm1;
-        private Long mPm10;
-        private Long mPm25;
-        private Long mPollutionLevel;
-        private Long mPressure;
-        private Long mTemperature;
-        private Long mWindDirection;
-        private Long mWindSpeed;
+        private Double mPm1;
+        private Double mPm10;
+        private Double mPm25;
+        private Double mPollutionLevel;
+        private Double mPressure;
+        private Double mTemperature;
+        private Double mWindDirection;
+        private Double mWindSpeed;
 
-        public Measurements.Builder withAirQualityIndex(Long airQualityIndex) {
+        public Measurements.Builder withAirQualityIndex(Double airQualityIndex) {
             mAirQualityIndex = airQualityIndex;
             return this;
         }
 
-        public Measurements.Builder withHumidity(Long humidity) {
+        public Measurements.Builder withHumidity(Double humidity) {
             mHumidity = humidity;
             return this;
         }
@@ -104,59 +104,59 @@ public class Measurements {
             return this;
         }
 
-        public Measurements.Builder withPm1(Long pm1) {
+        public Measurements.Builder withPm1(Double pm1) {
             mPm1 = pm1;
             return this;
         }
 
-        public Measurements.Builder withPm10(Long pm10) {
+        public Measurements.Builder withPm10(Double pm10) {
             mPm10 = pm10;
             return this;
         }
 
-        public Measurements.Builder withPm25(Long pm25) {
+        public Measurements.Builder withPm25(Double pm25) {
             mPm25 = pm25;
             return this;
         }
 
-        public Measurements.Builder withPollutionLevel(Long pollutionLevel) {
+        public Measurements.Builder withPollutionLevel(Double pollutionLevel) {
             mPollutionLevel = pollutionLevel;
             return this;
         }
 
-        public Measurements.Builder withPressure(Long pressure) {
+        public Measurements.Builder withPressure(Double pressure) {
             mPressure = pressure;
             return this;
         }
 
-        public Measurements.Builder withTemperature(Long temperature) {
+        public Measurements.Builder withTemperature(Double temperature) {
             mTemperature = temperature;
             return this;
         }
 
-        public Measurements.Builder withWindDirection(Long windDirection) {
+        public Measurements.Builder withWindDirection(Double windDirection) {
             mWindDirection = windDirection;
             return this;
         }
 
-        public Measurements.Builder withWindSpeed(Long windSpeed) {
+        public Measurements.Builder withWindSpeed(Double windSpeed) {
             mWindSpeed = windSpeed;
             return this;
         }
 
         public Measurements build() {
             Measurements Measurements = new Measurements();
-            Measurements.mAirQualityIndex = mAirQualityIndex;
-            Measurements.mHumidity = mHumidity;
-            Measurements.mMeasurementTime = mMeasurementTime;
-            Measurements.mPm1 = mPm1;
-            Measurements.mPm10 = mPm10;
-            Measurements.mPm25 = mPm25;
-            Measurements.mPollutionLevel = mPollutionLevel;
-            Measurements.mPressure = mPressure;
-            Measurements.mTemperature = mTemperature;
-            Measurements.mWindDirection = mWindDirection;
-            Measurements.mWindSpeed = mWindSpeed;
+            Measurements.AirQualityIndex = mAirQualityIndex;
+            Measurements.Humidity = mHumidity;
+            Measurements.MeasurementTime = mMeasurementTime;
+            Measurements.Pm1 = mPm1;
+            Measurements.Pm10 = mPm10;
+            Measurements.Pm25 = mPm25;
+            Measurements.PollutionLevel = mPollutionLevel;
+            Measurements.Pressure = mPressure;
+            Measurements.Temperature = mTemperature;
+            Measurements.WindDirection = mWindDirection;
+            Measurements.WindSpeed = mWindSpeed;
             return Measurements;
         }
 
